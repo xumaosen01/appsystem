@@ -5,17 +5,29 @@ import java.util.Date;
 
 public class AppVersion {
     private Long id;
+
     private Long appid;
+
     private String versionno;
+
     private String versioninfo;
+
     private Long publishstatus;
+
     private String downloadlink;
+
     private BigDecimal versionsize;
+
     private Long createdby;
+
     private Date creationdate;
+
     private Long modifyby;
+
     private Date modifydate;
+
     private String apklocpath;
+
     private String apkfilename;
 
     public Long getId() {
@@ -39,7 +51,7 @@ public class AppVersion {
     }
 
     public void setVersionno(String versionno) {
-        this.versionno = versionno;
+        this.versionno = versionno == null ? null : versionno.trim();
     }
 
     public String getVersioninfo() {
@@ -47,7 +59,7 @@ public class AppVersion {
     }
 
     public void setVersioninfo(String versioninfo) {
-        this.versioninfo = versioninfo;
+        this.versioninfo = versioninfo == null ? null : versioninfo.trim();
     }
 
     public Long getPublishstatus() {
@@ -63,7 +75,7 @@ public class AppVersion {
     }
 
     public void setDownloadlink(String downloadlink) {
-        this.downloadlink = downloadlink;
+        this.downloadlink = downloadlink == null ? null : downloadlink.trim();
     }
 
     public BigDecimal getVersionsize() {
@@ -111,7 +123,7 @@ public class AppVersion {
     }
 
     public void setApklocpath(String apklocpath) {
-        this.apklocpath = apklocpath;
+        this.apklocpath = apklocpath == null ? null : apklocpath.trim();
     }
 
     public String getApkfilename() {
@@ -119,6 +131,6 @@ public class AppVersion {
     }
 
     public void setApkfilename(String apkfilename) {
-        this.apkfilename = apkfilename;
+        this.apkfilename = apkfilename == null ? null : apkfilename.trim();
     }
 }

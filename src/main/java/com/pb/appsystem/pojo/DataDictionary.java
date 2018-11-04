@@ -4,13 +4,21 @@ import java.util.Date;
 
 public class DataDictionary {
     private Long id;
+
     private String typecode;
+
     private String typename;
+
     private Long valueid;
+
     private String valuename;
+
     private Long createdby;
+
     private Date creationdate;
+
     private Long modifyby;
+
     private Date modifydate;
 
     public Long getId() {
@@ -26,7 +34,7 @@ public class DataDictionary {
     }
 
     public void setTypecode(String typecode) {
-        this.typecode = typecode;
+        this.typecode = typecode == null ? null : typecode.trim();
     }
 
     public String getTypename() {
@@ -34,7 +42,7 @@ public class DataDictionary {
     }
 
     public void setTypename(String typename) {
-        this.typename = typename;
+        this.typename = typename == null ? null : typename.trim();
     }
 
     public Long getValueid() {
@@ -50,7 +58,7 @@ public class DataDictionary {
     }
 
     public void setValuename(String valuename) {
-        this.valuename = valuename;
+        this.valuename = valuename == null ? null : valuename.trim();
     }
 
     public Long getCreatedby() {

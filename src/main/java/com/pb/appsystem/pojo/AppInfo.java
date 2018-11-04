@@ -4,30 +4,52 @@ import java.math.BigDecimal;
 import java.util.Date;
 
 public class AppInfo {
-
     private Long id;
+
     private String softwarename;
+
     private String apkname;
+
     private String supportrom;
+
     private String interfacelanguage;
+
     private BigDecimal softwaresize;
+
     private Date updatedate;
+
     private Long devid;
-    private String appInfo;
+
+    private String appinfo;
+
     private Long status;
+
     private Date onsaledate;
+
     private Date offsaledate;
+
     private Long flatformid;
+
     private Long categorylevel3;
+
     private Long downloads;
+
     private Long createdby;
+
     private Date creationdate;
+
     private Long modifyby;
+
     private Date modifydate;
+
     private Long categorylevel1;
+
     private Long categorylevel2;
+
     private String logopicpath;
+
     private String logolocpath;
+
     private Long versionid;
 
     public Long getId() {
@@ -43,7 +65,7 @@ public class AppInfo {
     }
 
     public void setSoftwarename(String softwarename) {
-        this.softwarename = softwarename;
+        this.softwarename = softwarename == null ? null : softwarename.trim();
     }
 
     public String getApkname() {
@@ -51,7 +73,7 @@ public class AppInfo {
     }
 
     public void setApkname(String apkname) {
-        this.apkname = apkname;
+        this.apkname = apkname == null ? null : apkname.trim();
     }
 
     public String getSupportrom() {
@@ -59,7 +81,7 @@ public class AppInfo {
     }
 
     public void setSupportrom(String supportrom) {
-        this.supportrom = supportrom;
+        this.supportrom = supportrom == null ? null : supportrom.trim();
     }
 
     public String getInterfacelanguage() {
@@ -67,7 +89,7 @@ public class AppInfo {
     }
 
     public void setInterfacelanguage(String interfacelanguage) {
-        this.interfacelanguage = interfacelanguage;
+        this.interfacelanguage = interfacelanguage == null ? null : interfacelanguage.trim();
     }
 
     public BigDecimal getSoftwaresize() {
@@ -94,12 +116,12 @@ public class AppInfo {
         this.devid = devid;
     }
 
-    public String getAppInfo() {
-        return appInfo;
+    public String getAppinfo() {
+        return appinfo;
     }
 
-    public void setAppInfo(String appInfo) {
-        this.appInfo = appInfo;
+    public void setAppinfo(String appinfo) {
+        this.appinfo = appinfo == null ? null : appinfo.trim();
     }
 
     public Long getStatus() {
@@ -203,7 +225,7 @@ public class AppInfo {
     }
 
     public void setLogopicpath(String logopicpath) {
-        this.logopicpath = logopicpath;
+        this.logopicpath = logopicpath == null ? null : logopicpath.trim();
     }
 
     public String getLogolocpath() {
@@ -211,7 +233,7 @@ public class AppInfo {
     }
 
     public void setLogolocpath(String logolocpath) {
-        this.logolocpath = logolocpath;
+        this.logolocpath = logolocpath == null ? null : logolocpath.trim();
     }
 
     public Long getVersionid() {

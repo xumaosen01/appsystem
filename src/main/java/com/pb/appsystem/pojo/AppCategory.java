@@ -4,12 +4,19 @@ import java.util.Date;
 
 public class AppCategory {
     private Long id;
+
     private String categorycode;
+
     private String categoryname;
+
     private Long parentid;
+
     private Long createdby;
+
     private Date creationtime;
+
     private Long modifyby;
+
     private Date modifydate;
 
     public Long getId() {
@@ -25,7 +32,7 @@ public class AppCategory {
     }
 
     public void setCategorycode(String categorycode) {
-        this.categorycode = categorycode;
+        this.categorycode = categorycode == null ? null : categorycode.trim();
     }
 
     public String getCategoryname() {
@@ -33,7 +40,7 @@ public class AppCategory {
     }
 
     public void setCategoryname(String categoryname) {
-        this.categoryname = categoryname;
+        this.categoryname = categoryname == null ? null : categoryname.trim();
     }
 
     public Long getParentid() {

@@ -4,13 +4,21 @@ import java.util.Date;
 
 public class BackendUser {
     private Long id;
+
     private String usercode;
+
     private String username;
+
     private Long usertype;
+
     private Long createdby;
+
     private Date creationdate;
+
     private Long modifyby;
+
     private Date modifydate;
+
     private String userpassword;
 
     public Long getId() {
@@ -26,7 +34,7 @@ public class BackendUser {
     }
 
     public void setUsercode(String usercode) {
-        this.usercode = usercode;
+        this.usercode = usercode == null ? null : usercode.trim();
     }
 
     public String getUsername() {
@@ -34,7 +42,7 @@ public class BackendUser {
     }
 
     public void setUsername(String username) {
-        this.username = username;
+        this.username = username == null ? null : username.trim();
     }
 
     public Long getUsertype() {
@@ -82,6 +90,6 @@ public class BackendUser {
     }
 
     public void setUserpassword(String userpassword) {
-        this.userpassword = userpassword;
+        this.userpassword = userpassword == null ? null : userpassword.trim();
     }
 }

@@ -1,18 +1,26 @@
 package com.pb.appsystem.pojo;
 
-import java.math.BigDecimal;
 import java.util.Date;
 
 public class DevUser {
     private Long id;
+
     private String devcode;
+
     private String devname;
+
     private String devpassword;
+
     private String devemail;
+
     private String devinfo;
+
     private Long createdby;
+
     private Date creationdate;
+
     private Long modifyby;
+
     private Date modifydate;
 
     public Long getId() {
@@ -28,7 +36,7 @@ public class DevUser {
     }
 
     public void setDevcode(String devcode) {
-        this.devcode = devcode;
+        this.devcode = devcode == null ? null : devcode.trim();
     }
 
     public String getDevname() {
@@ -36,7 +44,7 @@ public class DevUser {
     }
 
     public void setDevname(String devname) {
-        this.devname = devname;
+        this.devname = devname == null ? null : devname.trim();
     }
 
     public String getDevpassword() {
@@ -44,7 +52,7 @@ public class DevUser {
     }
 
     public void setDevpassword(String devpassword) {
-        this.devpassword = devpassword;
+        this.devpassword = devpassword == null ? null : devpassword.trim();
     }
 
     public String getDevemail() {
@@ -52,7 +60,7 @@ public class DevUser {
     }
 
     public void setDevemail(String devemail) {
-        this.devemail = devemail;
+        this.devemail = devemail == null ? null : devemail.trim();
     }
 
     public String getDevinfo() {
@@ -60,7 +68,7 @@ public class DevUser {
     }
 
     public void setDevinfo(String devinfo) {
-        this.devinfo = devinfo;
+        this.devinfo = devinfo == null ? null : devinfo.trim();
     }
 
     public Long getCreatedby() {
